@@ -123,6 +123,29 @@
       h1 { font-size: 2.3em; }
       p { font-size: 1em; }
     }
+
+    .profile-image {
+      width: 200px;
+      height: 200px;
+      border-radius: 50%;
+      object-fit: cover;
+      border: 5px solid #ff4081;
+      box-shadow: 0 0 30px rgba(255, 64, 129, 0.5);
+      margin: 20px 0;
+      animation: imageGlow 3s ease-in-out infinite alternate;
+    }
+
+    @keyframes imageGlow {
+      0% { box-shadow: 0 0 30px rgba(255, 64, 129, 0.5); }
+      100% { box-shadow: 0 0 50px rgba(255, 64, 129, 0.8); }
+    }
+
+    @media screen and (max-width: 768px) {
+      .profile-image {
+        width: 150px;
+        height: 150px;
+      }
+    }
   </style>
 </head>
 <body>
@@ -131,6 +154,7 @@
   <div class="card">
     <h1>To My Beautiful Love</h1>
     <h2>Sazan Sleman 💊🌸</h2>
+    <img src="sazan.JPG" alt="Sazan Sleman" class="profile-image">
     <div class="heart">❤️</div>
     <p>
       My dearest Sazan,<br><br>
